@@ -24,6 +24,12 @@ export const useFetch = (url) => {
                 } else {
                     console.log("setState no se llamo");
                 }
+            }).catch(() => {
+                setstate({
+                    data: null,
+                    loading:false,
+                    error: 'error en llamado del API'
+                })
             })
         return () => {
             setstate({ data: null, loading: true, error: null })

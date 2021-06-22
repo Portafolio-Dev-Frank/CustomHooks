@@ -10,7 +10,7 @@ const init = () => {
     //     desc: 'aprender React',
     //     done: false
     // }]
-    return JSON.parse(localStorage.getItem('todos')) || [];
+    return JSON.parse(sessionStorage.getItem('todos')) || [];
 }
 
 export const TodoApp = () => {
@@ -19,7 +19,7 @@ export const TodoApp = () => {
 
 
     useEffect(() => {
-        localStorage.setItem('todos', JSON.stringify(todos))
+        sessionStorage.setItem('todos', JSON.stringify(todos))
         return () => {
             console.log('removido el effect');
         }

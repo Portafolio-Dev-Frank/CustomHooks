@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 
-export const useForm = (initialState = {}) => {
+export const useForm = (initialState = {
+    name: 'francisco',
+    email: 'francisco.email@email.com'
+}) => {
 
     const [formValues, setformValues] = useState(initialState)
 

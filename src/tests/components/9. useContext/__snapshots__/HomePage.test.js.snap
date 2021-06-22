@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en <HomePage></HomePage> debe renderizar el homePage 1`] = `<HomePage />`;

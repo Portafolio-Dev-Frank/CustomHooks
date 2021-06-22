@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en <AppRouter></AppRouter> debe de renderizar el <AppRouter></AppRouter>  1`] = `<AppRouter />`;
